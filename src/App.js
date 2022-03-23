@@ -1,4 +1,3 @@
-import logo from './logo.svg'
 import Navbar from './components/Navbar'
 import Carousel from './components/Carousel'
 import Content_1 from './components/Content_1'

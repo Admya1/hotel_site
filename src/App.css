@@ -1,167 +1,213 @@
- * {
-     margin: 0;
-     padding: 0;
- }
- /* NAVBAR */
- 
- body {
-     background-color: #23202054;
- }
- 
- nav {
-     position: sticky;
-     display: flex;
-     justify-content: space-between;
-     background: transparent;
-     z-index: 99;
- }
- 
- .logo {
-     border: solid 2px black;
-     width: 25%;
- }
- 
- .options {
-     display: flex;
-     width: 60%;
-     justify-content: flex-end;
- }
- 
- .options li {
-     list-style: none;
-     padding: 1rem 2rem;
-     padding-bottom: 0rem;
- }
- 
- .options ul {
-     margin: 0;
- }
- 
- .options a {
-     text-decoration: none;
-     color: white;
-     font-size: 1rem;
-     letter-spacing: 1.5px;
-     transition: color 300ms;
- }
- 
- .navbtn {
-     font-size: 1rem;
-     color: white;
-     background: transparent;
-     width: 15%;
-     padding: 1rem 2rem;
-     border: none;
-     letter-spacing: 1.5px;
-     /* border: 2px solid #ddbea9; */
-     transition: background-color 300ms, color 300ms;
- }
- 
- .options a:hover {
-     color: brown;
- }
- 
- .navbtn:hover {
-     background-color: white;
-     color: #ddbea9;
- }
- /* CARAUSEL */
- 
- .carousel {
-     margin-top: -80px;
- }
- 
- .carousel-caption {
-     bottom: 14.25rem;
-     background-color: rgb(0, 0, 0, 0.2);
- }
- 
- .carbtn {
-     background-color: #FF5722;
-     color: white;
-     border-radius: 29px;
-     border: solid 2px #FF5722;
-     font-size: 1rem;
-     margin-top: 1rem;
-     padding: 1rem;
-     transition: background-color 300ms, color 300ms;
- }
- 
- .carbtn:hover {
-     background-color: white;
-     color: #FF5722;
- }
- /* CONTENT */
- 
- .content {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
- }
- 
- .left {
-     max-width: 480px;
-     background-color: rgba(255, 255, 255, 0.712);
-     border-radius: 2rem;
-     padding: 3rem;
-     box-sizing: content-box;
-     font-size: 1.3rem;
- }
- 
- .right {
-     width: 50%;
- }
- 
- .rescol {
-     display: none;
- }
- 
- .content_1 {
-     background-image: url('../src/Images/c1_img.jpg');
-     background-size: cover;
- }
- 
- .content_2 {
-     background-image: url('../src/Images/c2_img.jpg');
-     background-size: cover;
- }
- 
- .content_3 {
-     background-image: url('../src/Images/c3_img.jpg');
-     background-size: cover;
- }
- 
- .content_4 {
-     background-image: url('../src/Images/c4_img.jpg');
-     background-size: cover;
- }
- 
- footer {
-     background-color: white;
- }
- /* For Tabs */
- 
- @media (max-width:1200px) {
-     .right {
-         display: none;
-     }
-     .left {
-         max-width: 960px;
-         width: 80%;
-     }
-     .options,
-     .navbtn {
-         display: none;
-     }
- }
- /* For Phones */
- 
- @media(max-width:560px) {
-     .content {
-         display: none;
-     }
-     .rescol {
-         display: block;
-     }
- }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVBAR */
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    z-index: 99;
+}
+
+.logo {
+    border: solid 2px black;
+    /* width: 25%; */
+    flex-grow: 1;
+    height: 56px;
+}
+
+.options {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.options li {
+    list-style: none;
+    padding: 1rem 2rem;
+    padding-bottom: 0rem;
+}
+
+.options ul {
+    margin: 0;
+}
+
+.options a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    transition: color 300ms;
+}
+
+.navbtn {
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border: none;
+    letter-spacing: 1.5px;
+    transition: background-color 300ms, color 300ms;
+}
+
+.options a:hover {
+    color: brown;
+}
+
+.navbtn:hover {
+    background-color: white;
+    color: #ddbea9;
+}
+
+.burger {
+    display: none;
+    border: solid 0.1rem transparent;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    transition: border 300ms;
+}
+
+.burger:hover {
+    border: white 0.1rem solid;
+}
+
+.line {
+    width: 3rem;
+    background-color: white;
+    height: 0.1rem;
+    margin: 0.9rem;
+}
+
+
+/* .responsive-nav {
+    display: none;
+} */
+
+
+/* CARAUSEL */
+
+.carousel {
+    margin-top: -80px;
+}
+
+.carousel-caption {
+    bottom: 14.25rem;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.carbtn {
+    background-color: #FF5722;
+    color: white;
+    border-radius: 29px;
+    border: solid 2px #FF5722;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    transition: background-color 300ms, color 300ms;
+}
+
+.carbtn:hover {
+    background-color: white;
+    color: #FF5722;
+}
+
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left {
+    max-width: 480px;
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-sizing: content-box;
+    font-size: 1.3rem;
+}
+
+.right {
+    width: 50%;
+}
+
+.rescol {
+    display: none;
+}
+
+.content_1 {
+    background-image: url('../src/Images/c1_img.jpg');
+    background-size: cover;
+}
+
+.content_2 {
+    background-image: url('../src/Images/c2_img.jpg');
+    background-size: cover;
+}
+
+.content_3 {
+    background-image: url('../src/Images/c3_img.jpg');
+    background-size: cover;
+}
+
+.content_4 {
+    background-image: url('../src/Images/c4_img.jpg');
+    background-size: cover;
+}
+
+.res_text {
+    background-color: rgba(255, 255, 255, 0.712) !important;
+    border-radius: 29px !important;
+    margin: -47px auto 10px;
+    width: 90%;
+}
+
+.card {
+    background-color: gray;
+}
+
+
+/* For Tabs */
+
+@media (max-width:1200px) {
+    .right {
+        display: none;
+    }
+    .left {
+        max-width: 960px;
+        width: 80%;
+    }
+    .options,
+    .navbtn {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    /* .responsive-nav,
+    .options-responsive {
+        display: flex;
+        flex-direction: column;
+    } */
+}
+
+
+/* For Phones */
+
+@media(max-width:560px) {
+    .content {
+        display: none;
+    }
+    .rescol {
+        display: block;
+    }
+}
