@@ -5,7 +5,7 @@ export default function Content_2() {
     <>
       <main className="content_2 content">
         <div className="right"></div>
-        <div className="left">
+        <div className="left" data-aos="fade-up">
           <h1>Magical Bungalows with views that stretch for miles</h1>
           <p>
             Organic textures, soothing tropical hues and all – natural materials

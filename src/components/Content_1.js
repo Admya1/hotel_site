@@ -4,7 +4,7 @@ export default function Content_1() {
   return (
     <>
       <main className="content_1 content">
-        <div className="left">
+        <div className="left" data-aos="fade-up">
           <h1>Florida’s Resort</h1>
           <p>
             An island oasis for downtime and disconnecting, Bungalows Key Largo

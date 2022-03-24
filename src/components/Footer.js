@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function Footer() {
   return (
     <>
@@ -19,22 +18,22 @@ export default function Footer() {
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li className="ms-3">
               <a href="#" target="_blank" title="facebook">
-                <i class="fa fa-facebook"></i>
+                <i className="fa fa-facebook"></i>
               </a>
             </li>
             <li className="ms-3">
               <a href="#" target="_blank" title="linkedin">
-                <i class="fa fa-linkedin"></i>
+                <i className="fa fa-linkedin"></i>
               </a>
             </li>
             <li className="ms-3">
               <a href="#" target="_blank" title="twitter">
-                <i class="fa fa-twitter"></i>
+                <i className="fa fa-twitter"></i>
               </a>
             </li>
             <li className="ms-3">
               <a href="#" target="_blank" title="twitter">
-                <i class="fa fa-instagram"></i>
+                <i className="fa fa-instagram"></i>
               </a>
             </li>
           </ul>
