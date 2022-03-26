@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 export default function navbar() {
+  const [model, setModel] = useState(false)
+  const open_nav = () => {
+    if (model == false) {
+      setModel(true)
+    } else {
+      setModel(false)
+    }
+  }
   return (
     <>
       <nav className="nav">
@@ -23,28 +31,31 @@ export default function navbar() {
         <button className="navbtn" type="submit">
           RESERVATION
         </button>
-        <div className="burger">
+        <div className="burger" onClick={open_nav}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
       </nav>
-      {/* <nav className="responive-nav">
-        <ul className="options-responsive">
+      <div className={model ? 'vertical_nav' : 'null'}>
+        <ul className="vertical_options">
           <li>
-            <Link>HOME</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li>
-            <Link>ABOUT US</Link>
+            <Link to="/about">ABOUT US</Link>
           </li>
           <li>
-            <Link>CONTACT US</Link>
+            <Link to="/contact">CONTACT US</Link>
           </li>
           <li>
-            <Link>GALLERY</Link>
+            <Link to="/gallery">GALLERY</Link>
           </li>
         </ul>
-      </nav> */}
+        <button className="ver_navbtn" type="submit">
+          RESERVATION
+        </button>
+      </div>
     </>
   )
 }
